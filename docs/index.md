@@ -1,17 +1,6 @@
-# Welcome to MkDocs
+# Welcome to DevNotes
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+## Where Am I?
+DevNotes is a constantly updated selection of notes and development recipes I have collected over time. I started writing things down, mainly for my personal reference, but with time, I became convinced that other people would benefit from those as well.
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Some of the things here have originated on [my blog](https://preslav.me), or have been reposted there. Feel free to check it out as well. 
