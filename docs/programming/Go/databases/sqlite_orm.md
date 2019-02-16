@@ -2,7 +2,7 @@
 
 inspired by [GORM Quick Start](http://gorm.io/docs/index.html#Quick-Start)
 
-```golang
+``` go
 package main
 
 import (
