@@ -44,6 +44,11 @@ will result in the following output:
 {John Smith}
 ```
 
+
+
+### Generics
+Go does not have generics, the way other languages do. Frankly, because of the complexity they introduce. This is not to say that you cannot acieve some sort of type of formal restrictions, but mainly, using Go's native constructs[^generics].
+
 ## Databases
 ### SQLite
 #### Drivers
@@ -57,3 +62,5 @@ will result in the following output:
 [^pass-by-value]: [When are function parameters passed by value? | The Go Programming Language FAQ](https://golang.org/doc/faq#pass_by_value)
 
 [^pass-by-value2]: [There is no pass-by-reference in Go | Dave Cheney](https://dave.cheney.net/2017/04/29/there-is-no-pass-by-reference-in-go)
+
+[^generics]: [Who needs generics? Use ... instead!](https://appliedgo.net/generics/)
