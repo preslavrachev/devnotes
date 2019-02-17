@@ -1,0 +1,19 @@
+language: python
+python:
+- '3.6'
+env:
+  global:
+  - secure: V9V6GNO0UQCtTl3Pc1ebEx+7vH8XcFCkyEUWCeJxej4lrGu8x1SQli89IpWyoDFdkd2UplSDj4Ksm3bpACfbSkw+k+6wv3g9k18J2h12tqmBC58UuqRYSmuR8P6ockwGjQxYU7ab7SDyh5pgP9CGpfFLw9MTxvMTXRHuQ7QHDzjHhrM53V/Kt4BRgv7LWywZkdIfmOqldQYgLX5BAOnNij5d3izd+7dEfRmr0EykhifpPf4OcAV+AwntHIxGBIYshuF2lkZjNtYrLgOJHhiONxswdELSgKT9dd8Cp6sXq5YDUDhF0JuNxrKF1GZdMzhc2VfBFybbGtHInNIR7tPBpXd1PRofNBgr8ESmX+0QoRZyb6IQiiV7zvdzn3Z4jhNg8HatirURdm1SmPwcv75gJuruFWAUfTI6YLLB/GZSf5Om9I6a195d9bn5gDxtJoMKVi8pwwfN6+fJs6MI+REM51hzFqK9uS5ROuu+UUERJcIs3UR2KNaquEKx6zsXNw0kxECpgyneKi6weUgU75Yj+2Smwl/Ht0VnSlH9o3//fuga4DD34oegp8vhSpZxYE+QSJWca1hBXg6L5uQ+wiQT60YRxfHYJyzR1kpnCmM3tMYQYXboNEn7yXBcjHTxcHSM2vP3F8Qq//6NoKEhsKdRSsAaVI9IXo0fDZh1DQ7RFxM=
+branches:
+  only:
+  - master
+  - feat/travis-build
+install:
+- pip install -r requirements.txt
+before_script:
+- export TZ=Europe/Berlin
+script:
+- git remote add github https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}
+- git remote -v
+- mkdocs build
+- mkdocs gh-deploy --force --remote-name github
