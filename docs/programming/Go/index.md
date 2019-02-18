@@ -64,3 +64,6 @@ Go does not have generics, the way other languages do. Frankly, because of the c
 [^pass-by-value2]: [There is no pass-by-reference in Go | Dave Cheney](https://dave.cheney.net/2017/04/29/there-is-no-pass-by-reference-in-go)
 
 [^generics]: [Who needs generics? Use ... instead!](https://appliedgo.net/generics/)
+## Backend Development
+[Building a RESTful API in Go Using Only the Standard Library](https://www.goin5minutes.com/screencast/episode_1_building_restful_api_using_only_std_lib/)
+
