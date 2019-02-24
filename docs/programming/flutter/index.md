@@ -22,5 +22,25 @@ TODO: Add more detials from [Widget - State - Context - InheritedWidget](https:/
 [^react]: [Reactjs: Class Components and Functional Components](https://medium.com/@lailbrown/reactjs-class-components-and-functional-components-5f00edbd5d92)
 
 ## Layout
+### Scaffold
+#### Common Issues
+##### Widgets appear behind navigation elements (e.g. behind nav bars)
+A common issue when setting up a page `Scaffold` is to see content appearing behind the main navigation element (e.g. behind the nav bar). To avoid this, the immediate child widget of a `Scaffold` instance needs to be wrapped in a so called `SafeArea`[^safearea] widget:
+
+``` dart hl_lines="4 8"
+class SearchPage1 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new CupertinoPageScaffold(
+        navigationBar: CupertinoNavigationBar(
+          middle: Text('Saved Searches'),
+        ),
+        child: SafeArea(
+          child: Column(
+          // the rest of the widget continues
+```
+
 ### Row and Column
 TODO: add more detials from [Flutter — Row/Column Cheat Sheet](https://medium.com/jlouage/flutter-row-column-cheat-sheet-78c38d242041)
+
+[^safearea]: [SafeArea | Flutter Docs](https://docs.flutter.io/flutter/widgets/SafeArea-class.html)
