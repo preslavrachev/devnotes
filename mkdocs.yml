@@ -4,3 +4,6 @@ theme:
 markdown_extensions:
   - codehilite
   - footnotes
+google_analytics:
+  - 'UA-131031623-2'
+  - auto
