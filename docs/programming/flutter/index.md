@@ -43,4 +43,13 @@ class SearchPage1 extends StatelessWidget {
 ### Row and Column
 TODO: add more detials from [Flutter — Row/Column Cheat Sheet](https://medium.com/jlouage/flutter-row-column-cheat-sheet-78c38d242041)
 
+### Advanced Topics
+#### Slivers
+Slivers[^slivers] are not a very deeply discussed topic in Flutter, mainly because they sit underneath more commonly used Widgets such as ListView, and GridView. This is a problem, because it leads to lots of panic when it comes to working with slivers.
+
+> A sliver is just a portion of a scrollable area. Under the covers, all of the scrollable views you use, like ListView and GridView, are actually implemented using Slivers.[^slivers2]
+
+[^slivers]: [Slivers | Flutter Docs](https://flutter.dev/docs/development/ui/advanced/slivers)
+[^slivers2]: [Slivers Demystifed](https://medium.com/flutter-io/slivers-demystified-6ff68ab0296f)
+
 [^safearea]: [SafeArea | Flutter Docs](https://docs.flutter.io/flutter/widgets/SafeArea-class.html)
