@@ -4,6 +4,7 @@ theme:
 markdown_extensions:
   - codehilite
   - footnotes
+  - pymdownx.mark
 google_analytics:
   - 'UA-131031623-2'
   - auto
