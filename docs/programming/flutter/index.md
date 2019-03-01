@@ -63,6 +63,10 @@ Slivers[^slivers] are not a very deeply discussed topic in Flutter, mainly becau
 
 When it comes to state management, a good advice for people just starting out with Flutter is: use `ScopedModel` for as long as you can. In a large majority of cases, a scoped model would be more than sufficient. When it does not scale, you can have a look at BLoC or at Redux for those coming from React.[^efortuna] If you are new to Flutter and don't have a strong reason to choose any other approach, this is the first thing you should try, before moving on to some more compliated approaches.[^scoped_model]
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I&#39;ve got to say, I&#39;m pretty frustrated to see how many excruciatingly complex solutions there are out there just to implement reactive <a href="https://twitter.com/flutterio?ref_src=twsrc%5Etfw">@flutterio</a>. I&#39;ve been Googling &quot;BLoC&quot; for 30mins now and even *I&#39;m* overwhelmed. Complexity != robust architecture. 😂 Strive for simplicity ppl.</p>&mdash; Nick Manning (@seenickcode) <a href="https://twitter.com/seenickcode/status/1089584516119834625?ref_src=twsrc%5Etfw">January 27, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 [^efortuna]: [Emily Fortuna | It's All Widgets Podcast](https://itsallwidgets.com/podcast/episodes/23/emily-fortuna)
 
 [^scoped_model]: [Simple app state management | Flutter Docs](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple)
