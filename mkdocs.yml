@@ -9,3 +9,9 @@ markdown_extensions:
 google_analytics:
   - 'UA-131031623-2'
   - auto
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/preslavrachev'
+    - type: 'twitter'
+      link: 'https://twitter.com/preslavrachev'
