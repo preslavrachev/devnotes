@@ -1,5 +1,5 @@
 # Web Development
-## Web Servers / WGSI
+## Web Servers / WSGI
 ### [Gunicorn](https://gunicorn.org/)
 #### FAQs
 ##### How do I include access logs?
