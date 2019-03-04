@@ -17,3 +17,7 @@ extra:
       link: 'https://github.com/preslavrachev'
     - type: 'twitter'
       link: 'https://twitter.com/preslavrachev'
+# nav:
+#   - Welcome to DevNotes: index.md
+#   - Programming:
+#     - Go: programming/Go/index.md
