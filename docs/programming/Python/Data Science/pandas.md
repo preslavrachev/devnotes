@@ -38,6 +38,8 @@ df.describe()
 #   max	    4500000.0	279.500000
 ```
 
+- [ ] ==**TODO:** Document `value_counts`==
+
 `value_counts` gets applied applied to a discrete series instead, and is a really easy way of checking how many rows there of each value there are in a data frame:
 
 ```python
@@ -48,3 +50,27 @@ df["city"].value_counts()
 #   Berlin     16
 #   Bremen     14
 ```
+
+## Encode categorical data
+### Simple Encoding
+There are many times, when you would need to turn your series of categorical data (e.g. city names, professions, car models, etc) into numeric representations. The simplest way to do this using Pandas, is to call `factorize` on the series you want to get encoded.[^factorize1][^factorize2]
+
+!!! info "[factorize](http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.factorize.html)"
+
+	Encode the object as an enumerated type or categorical variable.
+	This method is useful for obtaining a numeric representation of an array when all that matters is identifying distinct values. factorize is available as both a top-level function pandas.factorize(), and as a method 
+
+```python
+df['c_code'] = pd.factorize(df['city'])[0]
+
+print(df)
+
+#	 city      c_code
+#  München  0
+#  Bremen   1
+#  Berlin   2
+#  Hamburg  3
+```
+
+[^factorize1]: [Pandas: convert categories to numbers | Stackoverflow](https://stackoverflow.com/a/51311996/1107412)
+[^factorize2]: [factorize | Pandas Docs](http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.factorize.html)
