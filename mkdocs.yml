@@ -2,6 +2,7 @@ site_name: DevNotes
 theme:
   name: material
 markdown_extensions:
+  - admonition
   - codehilite
   - footnotes
   - pymdownx.mark
