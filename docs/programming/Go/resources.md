@@ -5,6 +5,31 @@
 - [Go in 5 Minutes](https://www.goin5minutes.com/)
 
 ## Bookmarks
+!!! abstract "[joho/godotenv: A Go port of Ruby's dotenv library (Loads environment variables from `.env`.)](https://github.com/joho/godotenv)"
+        <img src="https://avatars2.githubusercontent.com/u/4092?s=400&v=4" style="float:left; margin-right: 1rem; margin-bottom: 1rem; width: 4rem" />
+        A Go port of Ruby's dotenv library (Loads environment variables from `.env`.) - joho/godotenv
+
+
+        _**Date Added**: 2019-03-05T05:54:12Z_
+
+
+
+!!! abstract "[JSON-to-Go: Convert JSON to Go instantly](https://mholt.github.io/json-to-go/)"
+        <img src="" style="float:left; margin-right: 1rem; margin-bottom: 1rem; width: 4rem" />
+        This tool instantly converts JSON into a Go type definition. Paste a JSON structure on the left and the equivalent Go type will be generated to the right, which you can paste into your program. The script has to make some assumptions, so double-check the output!
+
+
+        _**Date Added**: 2019-03-04T20:55:49Z_
+
+
+
+!!! abstract "[Go's http package by example](https://cryptic.io/go-http/)"
+        <img src="https://cryptic.io/favicon.ico" style="float:left; margin-right: 1rem; margin-bottom: 1rem; width: 4rem" />
+        We are a group of developers involved in the tech industry that work, laugh, discover, and grow together. We encourage each other to push the boundaries of the technology we work with everyday. To help reach our personal goals we collaborate often and want others to share in this  experience.
+
+
+        _**Date Added**: 2019-03-04T17:52:38Z_
+
 
 !!! abstract "[lorca/README.md at master · zserge/lorca · GitHub](https://github.com/zserge/lorca/blob/master/README.md)"
         <img src="https://avatars2.githubusercontent.com/u/1911760?s=400&v=4" style="float:left; margin-right: 1rem; margin-bottom: 1rem; width: 4rem" />
