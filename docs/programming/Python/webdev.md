@@ -3,7 +3,7 @@
 ### [Gunicorn](https://gunicorn.org/)
 #### FAQs
 ##### How do I include access logs?
-By default, Gunicorn won't output anything but the log statements from within the application (and of those, only the ones matching the particular log level). In a regular setup, your access logs will be sitting in an `access_log file, maintained by Apache or nginx. If you want to output those in the standard log output of Gunicorn too (stdout by default), you should explicitly configure Gunicorn to do so:[^access]
+By default, Gunicorn won't output anything but the log statements from within the application (and of those, only the ones matching the particular log level). In a regular setup, your access logs will be sitting in an `access_log` file, maintained by Apache or nginx. If you want to output those in the standard log output of Gunicorn too (stdout by default), you should explicitly configure Gunicorn to do so:[^access]
 
 ``` bash hl_lines="4 5"
 gunicorn \
