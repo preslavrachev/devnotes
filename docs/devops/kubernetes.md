@@ -7,7 +7,7 @@
 There might be situations, in which you might not have the needed `deployment.yaml` manifest file. In this case, you can still replace the pod by asking `kubectl` to return the YAML deployment manufest that the pod has last been deployed with:[^replace]
 
 ```bash
-kubectl get po -n $namespace $POD_NAME -o yaml | kubectl replace -f -
+kubectl get pod PODNAME -n NAMESPACE -o yaml | kubectl replace --force -f -
 ```
 
 - [ ] ==check, this can be added as an alias to the `kubectl` command==
