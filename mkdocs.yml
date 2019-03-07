@@ -17,7 +17,37 @@ extra:
       link: 'https://github.com/preslavrachev'
     - type: 'twitter'
       link: 'https://twitter.com/preslavrachev'
-# nav:
-#   - Welcome to DevNotes: index.md
-#   - Programming:
-#     - Go: programming/Go/index.md
+nav:
+  - Welcome to DevNotes: index.md
+  - Programming:
+    - Go:
+      - Introduction: programming/Go/index.md
+      - JSON Manipulation: programming/Go/json.md
+      - Web Development: programming/Go/webdev.md
+      - Databases:
+        - SQLite ORM Example: programming/Go/databases/sqlite_orm.md
+      - Resources: programming/Go/resources.md
+    - Python:
+      - Asynchronous Processing: programming/Python/async.md
+      - Data Science:
+        - Pandas: programming/Python/Data Science/pandas.md
+      - Web Development: programming/Python/webdev.md
+    - Flutter / Dart: programming/flutter/index.md
+    - JavaScript:
+      - Introduction: programming/JavaScript/index.md
+      - Vue.js: programming/JavaScript/vuejs.md
+  - Data Science:
+    - Pandas: programming/Python/Data Science/pandas.md
+  - DevOps:
+    - Jenkins: devops/jenkins.md
+    - Kubernetes: devops/kubernetes.md
+    - Travis: programming/DevOps/Travis.md
+  - Mobile Development:
+    - Flutter: programming/flutter/index.md
+  - Tools:
+    - IDEs:
+      - Visual Studio Code: programming/tools/IDEs/vs_code.md
+    - Version Control:
+      - Git: programming/tools/Version Control/Git.md
+  - Other Tech Topics:
+    - Blockchains: Other Tech Topics/blockchains.md
