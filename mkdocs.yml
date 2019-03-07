@@ -6,6 +6,7 @@ markdown_extensions:
   - codehilite
   - footnotes
   - pymdownx.mark
+  - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
 google_analytics:
