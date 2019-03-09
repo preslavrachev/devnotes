@@ -48,6 +48,7 @@ nav:
   - Tools:
     - IDEs:
       - Visual Studio Code: programming/tools/IDEs/vs_code.md
+      - vim: programming/tools/IDEs/vim.md
     - Version Control:
       - Git: programming/tools/Version Control/Git.md
   - Other Tech Topics:
