@@ -53,3 +53,7 @@ nav:
       - Git: programming/tools/Version Control/Git.md
   - Other Tech Topics:
     - Blockchains: Other Tech Topics/blockchains.md
+
+# Repository
+repo_name: preslavrachev/devnotes
+repo_url: https://github.com/preslavrachev/devnotes
