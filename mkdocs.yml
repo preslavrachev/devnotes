@@ -31,6 +31,7 @@ nav:
     - Python:
       - Asynchronous Processing: programming/Python/async.md
       - Data Science:
+        - NumPy: programming/Python/Data Science/numpy.md
         - Pandas: programming/Python/Data Science/pandas.md
       - Web Development: programming/Python/webdev.md
     - Flutter / Dart: programming/flutter/index.md
@@ -38,7 +39,9 @@ nav:
       - Introduction: programming/JavaScript/index.md
       - Vue.js: programming/JavaScript/vuejs.md
   - Data Science:
-    - Pandas: programming/Python/Data Science/pandas.md
+    - Python:
+      - NumPy: programming/Python/Data Science/numpy.md
+      - Pandas: programming/Python/Data Science/pandas.md
   - DevOps:
     - Jenkins: devops/jenkins.md
     - Kubernetes: devops/kubernetes.md
