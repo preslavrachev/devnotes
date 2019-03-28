@@ -27,6 +27,9 @@ nav:
           - Web Development: programming/Go/webdev.md
           - Databases:
               - SQLite ORM Example: programming/Go/databases/sqlite_orm.md
+          - Tools:
+            - Web Development:
+                - Hugo: programming/hugo/index.md
           - Resources: programming/Go/resources.md
       - Python:
           - Asynchronous Processing: programming/Python/async.md
@@ -53,6 +56,9 @@ nav:
               - Python: "devops/docker/python.md"
   - Mobile Development:
       - Flutter: programming/flutter/index.md
+  - Web Development:
+      - Static Site Generators:
+        - Hugo: programming/hugo/index.md
   - Tools:
       - IDEs:
           - Visual Studio Code: programming/tools/IDEs/vs_code.md
