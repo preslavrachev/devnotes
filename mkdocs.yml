@@ -32,6 +32,7 @@ nav:
                 - Hugo: programming/hugo/index.md
           - Resources: programming/Go/resources.md
       - Python:
+          - Basics: programming/Python/index.md
           - Asynchronous Processing: programming/Python/async.md
           - Data Science:
               - NumPy: programming/Python/datascience/numpy.md
