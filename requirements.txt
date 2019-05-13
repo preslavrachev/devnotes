@@ -1,2 +1,5 @@
+feedparser==5.2.1
+grequests==0.3.0
 mkdocs==1.0.4
-mkdocs-material==4.0.1
+mkdocs-material==4.0.1i
+newspaper3k==0.2.8
