@@ -5,6 +5,113 @@
 - [Go in 5 Minutes](https://www.goin5minutes.com/)
 
 ## Bookmarks
+
+!!! abstract "[Dependency Injection in Go · software is fun](https://blog.drewolson.org/dependency-injection-in-go)"
+        <img src="" style="float:left; margin-right: 1rem; margin-bottom: 1rem; width: 4rem" />
+        Written by
+
+
+        _**Date Added**: 2019-05-02T05:22:52Z_
+
+
+
+!!! abstract "[uber-go/dig: A reflection based dependency injection toolkit for Go.](https://github.com/uber-go/dig)"
+        <img src="https://avatars1.githubusercontent.com/u/19262598?s=400&v=4" style="float:left; margin-right: 1rem; margin-bottom: 1rem; width: 4rem" />
+        A reflection based dependency injection toolkit for Go. - uber-go/dig
+
+
+        _**Date Added**: 2019-05-01T06:19:51Z_
+
+
+
+!!! abstract "[google/wire: Compile-time Dependency Injection for Go](https://github.com/google/wire)"
+        <img src="https://avatars0.githubusercontent.com/u/1342004?s=400&v=4" style="float:left; margin-right: 1rem; margin-bottom: 1rem; width: 4rem" />
+        Compile-time Dependency Injection for Go. Contribute to google/wire development by creating an account on GitHub.
+
+
+        _**Date Added**: 2019-05-01T06:14:33Z_
+
+
+
+!!! abstract "[Go modules support in Visual Studio Code](https://github.com/Microsoft/vscode-go/wiki/Go-modules-support-in-Visual-Studio-Code)"
+        <img src="https://avatars2.githubusercontent.com/u/6154722?s=400&v=4" style="float:left; margin-right: 1rem; margin-bottom: 1rem; width: 4rem" />
+        An extension for VS Code which provides support for the Go language. - Microsoft/vscode-go
+
+
+        _**Date Added**: 2019-04-30T10:13:59Z_
+
+
+
+!!! abstract "[Style guideline for Go packages · Go, the unwritten parts](https://rakyll.org/style-packages/)"
+        <img src="https://rakyll.org/apple-touch-icon-144-precomposed.png" style="float:left; margin-right: 1rem; margin-bottom: 1rem; width: 4rem" />
+        Sat, Jan 14, 2017
+
+
+        _**Date Added**: 2019-04-29T13:53:05Z_
+
+
+
+!!! abstract "[Go Web Examples](https://gowebexamples.com/)"
+        <img src="https://gowebexamples.com/apple-touch-icon.png" style="float:left; margin-right: 1rem; margin-bottom: 1rem; width: 4rem" />
+        Go Web Examples provides easy to understand code snippets on how to do web development in the Go programming language.
+
+
+        _**Date Added**: 2019-04-12T09:57:40Z_
+
+
+
+!!! abstract "[The Go Blog](https://blog.golang.org/ismmkeynote)"
+        <img src="https://blog.golang.org/ismmkeynote/image49.png" style="float:left; margin-right: 1rem; margin-bottom: 1rem; width: 4rem" />
+        Getting to Go: The Journey of Go's Garbage Collector
+
+
+        _**Date Added**: 2019-04-09T04:17:13Z_
+
+
+
+!!! abstract "[Lessons learned porting 50k loc from Java to Go](https://blog.kowalczyk.info/article/19f2fe97f06a47c3b1f118fd06851fad/lessons-learned-porting-50k-loc-from-java-to-go.html)"
+        <img src="https://blog.kowalczyk.info/img/d9c147e05c9ef0d52d50e1e8e34468f0a452a2b1.jpg" style="float:left; margin-right: 1rem; margin-bottom: 1rem; width: 4rem" />
+        Things I've learned porting a 50 thousand lines of code from Java to Go
+
+
+        _**Date Added**: 2019-04-07T15:34:56Z_
+
+
+
+!!! abstract "[A no-nonsense guide to environment variables in Go](https://endaphelan.me/guides/golang/a-no-nonsense-guide-to-environment-variables-in-go/)"
+        <img src="https://i.imgur.com/1eNgrht.png" style="float:left; margin-right: 1rem; margin-bottom: 1rem; width: 4rem" />
+        A step-by-step guide on how to configure your Go application with environment variables
+
+
+        _**Date Added**: 2019-04-04T12:36:01Z_
+
+
+
+!!! abstract "[Creating shared libraries in Go](http://snowsyn.net/2016/09/11/creating-shared-libraries-in-go/)"
+        <img src="" style="float:left; margin-right: 1rem; margin-bottom: 1rem; width: 4rem" />
+        GoThe Go compiler has been able to produce shared libraries since version 1.5.So how does it work ? First let’s write a Go function we want to share. The Gos...
+
+
+        _**Date Added**: 2019-04-04T05:19:52Z_
+
+
+
+!!! abstract "[Why I Don’t Use Go Web Frameworks](https://medium.com/code-zen/why-i-don-t-use-go-web-frameworks-1087e1facfa4)"
+        <img src="https://cdn-static-1.medium.com/_/fp/icons/favicon-rebrand-medium.3Y6xpZ-0FSdWDnPM3hSBIA.ico" style="float:left; margin-right: 1rem; margin-bottom: 1rem; width: 4rem" />
+        For those who are tempted to use a web framework in Golang, it may not be worth it.
+
+
+        _**Date Added**: 2019-03-12T09:52:09Z_
+
+
+
+!!! abstract "[50 Shades of Go: Traps, Gotchas, and Common Mistakes for New Golang Devs](http://devs.cloudimmunity.com/gotchas-and-common-mistakes-in-go-golang/)"
+        <img src="http://devs.cloudimmunity.com/content/images/2014/12/kcq_gh_pix.png" style="float:left; margin-right: 1rem; margin-bottom: 1rem; width: 4rem" />
+        Go is a simple and fun language, but, like any other language, it has a few gotchas... Many of those gotchas are not entirely Go's fault. Some of these mistakes are natural traps if you are coming from another language....
+
+
+        _**Date Added**: 2019-03-11T18:03:58Z_
+
 !!! abstract "[joho/godotenv: A Go port of Ruby's dotenv library (Loads environment variables from `.env`.)](https://github.com/joho/godotenv)"
         <img src="https://avatars2.githubusercontent.com/u/4092?s=400&v=4" style="float:left; margin-right: 1rem; margin-bottom: 1rem; width: 4rem" />
         A Go port of Ruby's dotenv library (Loads environment variables from `.env`.) - joho/godotenv

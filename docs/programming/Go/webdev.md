@@ -62,3 +62,29 @@ Sometimes, you would need to provide an instance that conforms to the  `Handler`
 Looking at it carefully, will help you grasp a crucial part of Go's magic - the fact that everything, including functions, is a type, which you can attach further functions upon. In this case, `ServeHTTP` is actually implemented for us inside `http` and essentially proxies to the function we pass as parameter to `HandlerFunc`.
 
 [^handlerfunc]: [type HandlerFunc | Go Docs](https://golang.org/src/net/http/server.go?s=59707:59754#L1987)
+
+### How do I return an HTTP error?
+
+[`http.Error`](https://devdocs.io/go/net/http/index#Error) is the default way of communicating errors to your API's consumers. It takes a message and an error code. The three most often used status codes are:
+
+- `http.StatusBadRequest` (400)
+- `http.StatusNotFound` (404)
+- `http.StatusInternalServerError` (500)
+
+```go
+http.HandleFunc("/xyz", func(writer http.ResponseWriter, request *http.Request) {
+		result, err = someFunction()
+
+		if err != nil {
+			// This could be a custom message as well
+			errMsg := http.StatusText(http.StatusBadRequest)
+
+			http.Error(writer, errMsg, http.StatusBadRequest)
+
+			// NOTE: Do not forget the retunn statement!
+			return
+		}
+
+		// continue with the logic
+})
+```
