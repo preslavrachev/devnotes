@@ -28,11 +28,12 @@ nav:
           - Databases:
               - SQLite ORM Example: programming/Go/databases/sqlite_orm.md
           - Tools:
-            - Web Development:
-                - Hugo: programming/hugo/index.md
+              - Web Development:
+                  - Hugo: programming/hugo/index.md
           - Resources: programming/Go/resources.md
       - Python:
           - Basics: programming/Python/index.md
+          - Decorators: programming/Python/decorators.md
           - Asynchronous Processing: programming/Python/async.md
           - Data Science:
               - NumPy: programming/Python/datascience/numpy.md
@@ -59,7 +60,7 @@ nav:
       - Flutter: programming/flutter/index.md
   - Web Development:
       - Static Site Generators:
-        - Hugo: programming/hugo/index.md
+          - Hugo: programming/hugo/index.md
   - Tools:
       - IDEs:
           - Visual Studio Code: programming/tools/IDEs/vs_code.md
