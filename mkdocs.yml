@@ -30,6 +30,7 @@ nav:
           - Tools:
               - Web Development:
                   - Hugo: programming/hugo/index.md
+              - Developer Tooling: programming/Go/tooling.md
           - Resources: programming/Go/resources.md
       - Python:
           - Basics: programming/Python/index.md
