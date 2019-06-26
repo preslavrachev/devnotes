@@ -1,4 +1,5 @@
 site_name: DevNotes
+site_url: https://devnotes.space
 theme:
   name: material
 markdown_extensions:
