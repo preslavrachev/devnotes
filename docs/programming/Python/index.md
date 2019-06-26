@@ -19,6 +19,19 @@ for idx, item in enumerate(items):
 
 [^enumerate_docs]: [enumerate | Python Docs](https://docs.python.org/3/library/functions.html#enumerate)
 
+## Dates and Date Formatting
+### Turn a UNIX timestamp into a date object / date string [^timestamp]
+
+```python
+from datetime import datetime
+timestamp = 1545730073
+dt_object = datetime.fromtimestamp(timestamp)
+
+str_date = str(dt_object) # '2018-12-25 09:27:53'
+```
+
+[^timestamp]: [Python timestamp to datetime and vice-versa](https://www.programiz.com/python-programming/datetime/timestamp-datetime)
+
 ## Setup and Installing Dependencies
 ### requirements.txt
 #### Requirements files can invoke other requirements files
