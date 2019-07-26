@@ -1,0 +1,1602 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://devnotes.space/programming/flutter/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.1">
+    
+    
+      
+        <title>Flutter - DevNotes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.982221ab.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1f0bcf2b.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-131031623-2", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#flutter" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://devnotes.space" title="DevNotes" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              DevNotes
+            </span>
+            <span class="md-header-nav__topic">
+              Flutter
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/preslavrachev/devnotes/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    preslavrachev/devnotes
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://devnotes.space" title="DevNotes" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    DevNotes
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/preslavrachev/devnotes/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    preslavrachev/devnotes
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Welcome to DevNotes" class="md-nav__link">
+      Welcome to DevNotes
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Programming
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Programming
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Go
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Go
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Go/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Go/json/" title="JSON Manipulation" class="md-nav__link">
+      JSON Manipulation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Go/webdev/" title="Web Development" class="md-nav__link">
+      Web Development
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-4" type="checkbox" id="nav-2-1-4">
+    
+    <label class="md-nav__link" for="nav-2-1-4">
+      Databases
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-4">
+        Databases
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Go/databases/sqlite_orm/" title="SQLite ORM Example" class="md-nav__link">
+      SQLite ORM Example
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-5" type="checkbox" id="nav-2-1-5">
+    
+    <label class="md-nav__link" for="nav-2-1-5">
+      Tools
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-1-5">
+        Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-5-1" type="checkbox" id="nav-2-1-5-1">
+    
+    <label class="md-nav__link" for="nav-2-1-5-1">
+      Web Development
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-1-5-1">
+        Web Development
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../hugo/" title="Hugo" class="md-nav__link">
+      Hugo
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Go/tooling/" title="Developer Tooling" class="md-nav__link">
+      Developer Tooling
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Go/resources/" title="Resources" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Python
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python/" title="Basics" class="md-nav__link">
+      Basics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python/decorators/" title="Decorators" class="md-nav__link">
+      Decorators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python/async/" title="Asynchronous Processing" class="md-nav__link">
+      Asynchronous Processing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2-4" type="checkbox" id="nav-2-2-4">
+    
+    <label class="md-nav__link" for="nav-2-2-4">
+      Data Science
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-4">
+        Data Science
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python/datascience/numpy/" title="NumPy" class="md-nav__link">
+      NumPy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python/datascience/pandas/" title="Pandas" class="md-nav__link">
+      Pandas
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python/webdev/" title="Web Development" class="md-nav__link">
+      Web Development
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2-6" type="checkbox" id="nav-2-2-6">
+    
+    <label class="md-nav__link" for="nav-2-2-6">
+      Deployment
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-2-6">
+        Deployment
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../devops/docker/python/" title="Docker" class="md-nav__link">
+      Docker
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="./" title="Flutter / Dart" class="md-nav__link">
+      Flutter / Dart
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      JavaScript
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        JavaScript
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../JavaScript/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../JavaScript/vuejs/" title="Vue.js" class="md-nav__link">
+      Vue.js
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Data Science
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Data Science
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      Python
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python/datascience/numpy/" title="NumPy" class="md-nav__link">
+      NumPy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Python/datascience/pandas/" title="Pandas" class="md-nav__link">
+      Pandas
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      DevOps
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        DevOps
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../devops/jenkins/" title="Jenkins" class="md-nav__link">
+      Jenkins
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../devops/kubernetes/" title="Kubernetes" class="md-nav__link">
+      Kubernetes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../DevOps/Travis/" title="Travis" class="md-nav__link">
+      Travis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
+    
+    <label class="md-nav__link" for="nav-4-4">
+      Docker
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        Docker
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4-1" type="checkbox" id="nav-4-4-1">
+    
+    <label class="md-nav__link" for="nav-4-4-1">
+      Containerization Tips
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-4-1">
+        Containerization Tips
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../devops/docker/python/" title="Python" class="md-nav__link">
+      Python
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Mobile Development
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Mobile Development
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Flutter
+      </label>
+    
+    <a href="./" title="Flutter" class="md-nav__link md-nav__link--active">
+      Flutter
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-concepts" title="Core Concepts" class="md-nav__link">
+    Core Concepts
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#widgets" title="Widgets" class="md-nav__link">
+    Widgets
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stateful-vs-stateless-widgets" title="Stateful vs. Stateless Widgets" class="md-nav__link">
+    Stateful vs. Stateless Widgets
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stateless-widgets" title="Stateless widgets" class="md-nav__link">
+    Stateless widgets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layout" title="Layout" class="md-nav__link">
+    Layout
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scaffold" title="Scaffold" class="md-nav__link">
+    Scaffold
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues" title="Common Issues" class="md-nav__link">
+    Common Issues
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#widgets-appear-behind-navigation-elements-eg-behind-nav-bars" title="Widgets appear behind navigation elements (e.g. behind nav bars)" class="md-nav__link">
+    Widgets appear behind navigation elements (e.g. behind nav bars)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#row-and-column" title="Row and Column" class="md-nav__link">
+    Row and Column
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-topics" title="Advanced Topics" class="md-nav__link">
+    Advanced Topics
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slivers" title="Slivers" class="md-nav__link">
+    Slivers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#state-management" title="State Management" class="md-nav__link">
+    State Management
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Web Development
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Web Development
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-1" type="checkbox" id="nav-6-1">
+    
+    <label class="md-nav__link" for="nav-6-1">
+      Static Site Generators
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-1">
+        Static Site Generators
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../hugo/" title="Hugo" class="md-nav__link">
+      Hugo
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Tools
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Tools
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1">
+    
+    <label class="md-nav__link" for="nav-7-1">
+      IDEs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-1">
+        IDEs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tools/IDEs/vs_code/" title="Visual Studio Code" class="md-nav__link">
+      Visual Studio Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tools/IDEs/vim/" title="vim" class="md-nav__link">
+      vim
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+    
+    <label class="md-nav__link" for="nav-7-2">
+      Version Control
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-2">
+        Version Control
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tools/Version Control/Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Other Tech Topics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Other Tech Topics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Other Tech Topics/blockchains/" title="Blockchains" class="md-nav__link">
+      Blockchains
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-concepts" title="Core Concepts" class="md-nav__link">
+    Core Concepts
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#widgets" title="Widgets" class="md-nav__link">
+    Widgets
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stateful-vs-stateless-widgets" title="Stateful vs. Stateless Widgets" class="md-nav__link">
+    Stateful vs. Stateless Widgets
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stateless-widgets" title="Stateless widgets" class="md-nav__link">
+    Stateless widgets
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layout" title="Layout" class="md-nav__link">
+    Layout
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scaffold" title="Scaffold" class="md-nav__link">
+    Scaffold
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-issues" title="Common Issues" class="md-nav__link">
+    Common Issues
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#widgets-appear-behind-navigation-elements-eg-behind-nav-bars" title="Widgets appear behind navigation elements (e.g. behind nav bars)" class="md-nav__link">
+    Widgets appear behind navigation elements (e.g. behind nav bars)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#row-and-column" title="Row and Column" class="md-nav__link">
+    Row and Column
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-topics" title="Advanced Topics" class="md-nav__link">
+    Advanced Topics
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slivers" title="Slivers" class="md-nav__link">
+    Slivers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#state-management" title="State Management" class="md-nav__link">
+    State Management
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/preslavrachev/devnotes/edit/master/docs/programming/flutter/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="flutter">Flutter</h1>
+<h2 id="core-concepts">Core Concepts</h2>
+<h3 id="widgets">Widgets</h3>
+<p>In Flutter, everything you see on the screen and can interact with, is called a <strong><em>Widget</em></strong><sup id="fnref:widgets"><a class="footnote-ref" href="#fn:widgets">1</a></sup> <sup id="fnref:widgets2"><a class="footnote-ref" href="#fn:widgets2">2</a></sup>. Whether they keep any state or not, widgets are to be considered immutable - when the state a widget depends on depends on changes, the widget does not merely change, but it gets replaced with a new instance. This is a concept that has been popularized by frameworks such as React.</p>
+<h4 id="stateful-vs-stateless-widgets">Stateful vs. Stateless Widgets</h4>
+<p>Flutter distinguishes between <em>stateless</em> and <em>stateful</em> widgets. For those, familiar with React, the distinction is similar to that between class and functional React components<sup id="fnref:react"><a class="footnote-ref" href="#fn:react">3</a></sup>.</p>
+<h5 id="stateless-widgets">Stateless widgets</h5>
+<p>A stateless widget is the rough equivalent of a one-way street. It is given some final state at instantiation time, and throughoutits lifetime, it only makes use of those. A stateless widget cannot hold non-fina fields, in fact if you try to add one to a class that extends from <code>StatelessWidget</code>, you will see the following warning:</p>
+<blockquote>
+<p>This class (or a class which this class inherits from) is marked as '@immutable', but one or more of its instance fields are not final.</p>
+</blockquote>
+<p>If you dive deeper into the Flutter SDK code, you will find the following piece of documentation regarding <code>@immutable</code>:</p>
+<blockquote>
+<p>A class is immutable if all of the instance fields of the class, whether defined directly or inherited, are <code>final</code>.</p>
+</blockquote>
+<p><mark>TODO: Add more detials from <a href="https://www.didierboelens.com/2018/06/widget---state---context---inheritedwidget/">Widget - State - Context - InheritedWidget</a></mark></p>
+<h2 id="layout">Layout</h2>
+<h3 id="scaffold">Scaffold</h3>
+<h4 id="common-issues">Common Issues</h4>
+<h5 id="widgets-appear-behind-navigation-elements-eg-behind-nav-bars">Widgets appear behind navigation elements (e.g. behind nav bars)</h5>
+<p>A common issue when setting up a page <code>Scaffold</code> is to see content appearing behind the main navigation element (e.g. behind the nav bar). To avoid this, the immediate child widget of a <code>Scaffold</code> instance needs to be wrapped in a so called <code>SafeArea</code><sup id="fnref:safearea"><a class="footnote-ref" href="#fn:safearea">6</a></sup> widget:</p>
+<div class="codehilite"><pre><span></span><span class="kd">class</span> <span class="nc">SearchPage1</span> <span class="kd">extends</span> <span class="n">StatelessWidget</span> <span class="p">{</span>
+  <span class="err">@</span><span class="n">override</span>
+  <span class="n">Widget</span> <span class="n">build</span><span class="p">(</span><span class="n">BuildContext</span> <span class="n">context</span><span class="p">)</span> <span class="p">{</span>
+<span class="hll">    <span class="k">return</span> <span class="k">new</span> <span class="n">CupertinoPageScaffold</span><span class="p">(</span>
+</span>        <span class="nl">navigationBar:</span> <span class="n">CupertinoNavigationBar</span><span class="p">(</span>
+          <span class="nl">middle:</span> <span class="n">Text</span><span class="p">(</span><span class="s1">&#39;Saved Searches&#39;</span><span class="p">),</span>
+        <span class="p">),</span>
+<span class="hll">        <span class="nl">child:</span> <span class="n">SafeArea</span><span class="p">(</span>
+</span>          <span class="nl">child:</span> <span class="n">Column</span><span class="p">(</span>
+          <span class="c1">// the rest of the widget continues</span>
+</pre></div>
+
+<h3 id="row-and-column">Row and Column</h3>
+<p><mark>TODO: add more detials from <a href="https://medium.com/jlouage/flutter-row-column-cheat-sheet-78c38d242041">Flutter — Row/Column Cheat Sheet</a></mark></p>
+<h3 id="advanced-topics">Advanced Topics</h3>
+<h4 id="slivers">Slivers</h4>
+<p>Slivers<sup id="fnref:slivers"><a class="footnote-ref" href="#fn:slivers">4</a></sup> are not a very deeply discussed topic in Flutter, mainly because they sit underneath more commonly used Widgets such as ListView, and GridView. This is a problem, because it leads to lots of panic when it comes to working with slivers.</p>
+<blockquote>
+<p>A sliver is just a portion of a scrollable area. Under the covers, all of the scrollable views you use, like ListView and GridView, are actually implemented using Slivers.<sup id="fnref:slivers2"><a class="footnote-ref" href="#fn:slivers2">5</a></sup></p>
+</blockquote>
+<h2 id="state-management">State Management</h2>
+<p><mark>TODO: elaborate on this <a href="https://flutter.dev/docs/development/data-and-backend/state-mgmt/options">List of state management approaches</a></mark></p>
+<p>When it comes to state management, a good advice for people just starting out with Flutter is: use <code>ScopedModel</code> for as long as you can. In a large majority of cases, a scoped model would be more than sufficient. When it does not scale, you can have a look at BLoC or at Redux for those coming from React.<sup id="fnref:efortuna"><a class="footnote-ref" href="#fn:efortuna">7</a></sup> If you are new to Flutter and don't have a strong reason to choose any other approach, this is the first thing you should try, before moving on to some more compliated approaches.<sup id="fnref:scoped_model"><a class="footnote-ref" href="#fn:scoped_model">8</a></sup></p>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I&#39;ve got to say, I&#39;m pretty frustrated to see how many excruciatingly complex solutions there are out there just to implement reactive <a href="https://twitter.com/flutterio?ref_src=twsrc%5Etfw">@flutterio</a>. I&#39;ve been Googling &quot;BLoC&quot; for 30mins now and even *I&#39;m* overwhelmed. Complexity != robust architecture. 😂 Strive for simplicity ppl.</p>&mdash; Nick Manning (@seenickcode) <a href="https://twitter.com/seenickcode/status/1089584516119834625?ref_src=twsrc%5Etfw">January 27, 2019</a></blockquote>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:widgets">
+<p><a href="https://flutter.io/docs/development/ui/widgets/basics">Basic widgets | Flutter</a>&#160;<a class="footnote-backref" href="#fnref:widgets" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:widgets2">
+<p><a href="[https://flutter.io/docs/development/ui/widgets/basics](https://flutterbyexample.com/flutter-widgets/)">Flutter Widgets | Flutter by Example</a>&#160;<a class="footnote-backref" href="#fnref:widgets2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:react">
+<p><a href="https://medium.com/@lailbrown/reactjs-class-components-and-functional-components-5f00edbd5d92">Reactjs: Class Components and Functional Components</a>&#160;<a class="footnote-backref" href="#fnref:react" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:slivers">
+<p><a href="https://flutter.dev/docs/development/ui/advanced/slivers">Slivers | Flutter Docs</a>&#160;<a class="footnote-backref" href="#fnref:slivers" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:slivers2">
+<p><a href="https://medium.com/flutter-io/slivers-demystified-6ff68ab0296f">Slivers Demystifed</a>&#160;<a class="footnote-backref" href="#fnref:slivers2" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:safearea">
+<p><a href="https://docs.flutter.io/flutter/widgets/SafeArea-class.html">SafeArea | Flutter Docs</a>&#160;<a class="footnote-backref" href="#fnref:safearea" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:efortuna">
+<p><a href="https://itsallwidgets.com/podcast/episodes/23/emily-fortuna">Emily Fortuna | It's All Widgets Podcast</a>&#160;<a class="footnote-backref" href="#fnref:efortuna" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:scoped_model">
+<p><a href="https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple">Simple app state management | Flutter Docs</a>&#160;<a class="footnote-backref" href="#fnref:scoped_model" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../devops/docker/python/" title="Python" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Python
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../hugo/" title="Hugo" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Hugo
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/preslavrachev" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/preslavrachev" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b806dc00.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>
