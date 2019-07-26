@@ -18,6 +18,13 @@ This is very useful, if you obtain the hash (e.g. from a status log), but you ar
 git branch --contains COMMIT_HASH
 ```
 
+### List all local branches, which have already been merged to master
+This is useful for cleaning up your local branches
+
+```bash
+git branch --merged | grep -v master
+```
+
 ## Clients
 ### macOS
 - [GitUp](https://gitup.co/)
