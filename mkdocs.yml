@@ -22,6 +22,9 @@ extra:
 nav:
   - Welcome to DevNotes: index.md
   - Programming:
+      - Crystal:
+          - Examples:
+              - Fetch Items from an eBay Listing Page: programming/crystal/examples/fetch-ebay-product-ids.md
       - Go:
           - Introduction: programming/Go/index.md
           - JSON Manipulation: programming/Go/json.md
