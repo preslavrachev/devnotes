@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://devnotes.space/programming/Python/datascience/pandas/">
+        <link rel="canonical" href="https://devnotes.space/programming/crystal/examples/fetch-ebay-product-ids/">
       
       
       
@@ -38,7 +38,7 @@
     
     
       
-        <title>Pandas - DevNotes</title>
+        <title>Fetch Items from an eBay Listing Page - DevNotes</title>
       
     
     
@@ -121,10 +121,6 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#pandas" tabindex="1" class="md-skip">
-        Skip to content
-      </a>
-    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -146,7 +142,7 @@
               DevNotes
             </span>
             <span class="md-header-nav__topic">
-              Pandas
+              Fetch Items from an eBay Listing Page
             </span>
           
         </div>
@@ -266,10 +262,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Programming
@@ -285,10 +283,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
     
     <label class="md-nav__link" for="nav-2-1">
       Crystal
@@ -304,10 +304,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-1" type="checkbox" id="nav-2-1-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1-1" type="checkbox" id="nav-2-1-1" checked>
     
     <label class="md-nav__link" for="nav-2-1-1">
       Examples
@@ -323,11 +325,18 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../../crystal/examples/fetch-ebay-product-ids/" title="Fetch Items from an eBay Listing Page" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="Fetch Items from an eBay Listing Page" class="md-nav__link md-nav__link--active">
       Fetch Items from an eBay Listing Page
     </a>
+    
   </li>
 
         
@@ -546,7 +555,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../" title="Basics" class="md-nav__link">
+    <a href="../../../Python/" title="Basics" class="md-nav__link">
       Basics
     </a>
   </li>
@@ -558,7 +567,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../decorators/" title="Decorators" class="md-nav__link">
+    <a href="../../../Python/decorators/" title="Decorators" class="md-nav__link">
       Decorators
     </a>
   </li>
@@ -570,7 +579,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../async/" title="Asynchronous Processing" class="md-nav__link">
+    <a href="../../../Python/async/" title="Asynchronous Processing" class="md-nav__link">
       Asynchronous Processing
     </a>
   </li>
@@ -601,7 +610,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../numpy/" title="NumPy" class="md-nav__link">
+    <a href="../../../Python/datascience/numpy/" title="NumPy" class="md-nav__link">
       NumPy
     </a>
   </li>
@@ -613,65 +622,9 @@
 
 
   <li class="md-nav__item">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Pandas
-      </label>
-    
-    <a href="./" title="Pandas" class="md-nav__link md-nav__link--active">
+    <a href="../../../Python/datascience/pandas/" title="Pandas" class="md-nav__link">
       Pandas
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#simple-descriptive-statistics" title="Simple Descriptive Statistics" class="md-nav__link">
-    Simple Descriptive Statistics
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#encode-categorical-data" title="Encode categorical data" class="md-nav__link">
-    Encode categorical data
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#simple-encoding" title="Simple Encoding" class="md-nav__link">
-    Simple Encoding
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -686,7 +639,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../webdev/" title="Web Development" class="md-nav__link">
+    <a href="../../../Python/webdev/" title="Web Development" class="md-nav__link">
       Web Development
     </a>
   </li>
@@ -802,12 +755,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       Data Science
@@ -823,12 +774,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
     
     <label class="md-nav__link" for="nav-3-1">
       Python
@@ -846,7 +795,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../numpy/" title="NumPy" class="md-nav__link">
+    <a href="../../../Python/datascience/numpy/" title="NumPy" class="md-nav__link">
       NumPy
     </a>
   </li>
@@ -856,69 +805,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Pandas
-      </label>
-    
-    <a href="./" title="Pandas" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../../Python/datascience/pandas/" title="Pandas" class="md-nav__link">
       Pandas
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#simple-descriptive-statistics" title="Simple Descriptive Statistics" class="md-nav__link">
-    Simple Descriptive Statistics
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#encode-categorical-data" title="Encode categorical data" class="md-nav__link">
-    Encode categorical data
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#simple-encoding" title="Simple Encoding" class="md-nav__link">
-    Simple Encoding
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1299,136 +1190,51 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#simple-descriptive-statistics" title="Simple Descriptive Statistics" class="md-nav__link">
-    Simple Descriptive Statistics
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#encode-categorical-data" title="Encode categorical data" class="md-nav__link">
-    Encode categorical data
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#simple-encoding" title="Simple Encoding" class="md-nav__link">
-    Simple Encoding
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/preslavrachev/devnotes/edit/master/docs/programming/Python/datascience/pandas.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/preslavrachev/devnotes/edit/master/docs/programming/crystal/examples/fetch-ebay-product-ids.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="pandas">Pandas</h1>
-<h2 id="simple-descriptive-statistics">Simple Descriptive Statistics</h2>
-<p>Before taking the big guns, such as aggregations, I usually try to first get a good grasp of the data inside the data frame. Looking at the <code>head</code> and <code>tail</code> of the data framew is one of the first things you should do:</p>
-<div class="codehilite"><pre><span></span><span class="c1"># check the top of the data frame</span>
-<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+                  <h1>Fetch Items from an eBay Listing Page</h1>
+                
+                <p>The goal of this sample is to demonstrate fetching HTML data from a page (en eBay search listing), parsing the HTML content using a 3rd party library<sup id="fnref:myhtml"><a class="footnote-ref" href="#fn:myhtml">1</a></sup>, and looking for a specific attribute within the content (<code>listingId</code>). The elements that have it contain IDs to the products that apear on the given listing page. We would finally map those out, and turn the resulting array into a set (<code>to_s</code>) in order to remove duplicates.</p>
+<div class="codehilite"><pre><span></span><span class="k">require</span> <span class="s2">&quot;http/client&quot;</span>
+<span class="k">require</span> <span class="s2">&quot;myhtml&quot;</span>
 
-<span class="c1"># check the botto of the data frame</span>
-<span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
-</pre></div>
+<span class="k">module</span> <span class="nn">Bayhunt</span>
+  <span class="n">res</span> <span class="o">=</span> <span class="no">HTTP</span><span class="o">::</span><span class="n">Client</span><span class="o">.</span><span class="n">get</span> <span class="s2">&quot;https://www.ebay.com/sch/i.html?_nkw=iphone+xr&quot;</span>
+  <span class="n">parser</span> <span class="o">=</span> <span class="n">Myhtml</span><span class="o">::</span><span class="n">Parser</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">body</span><span class="p">)</span>
 
-<p>If the data frame is very large you can also grab a random sample of it:</p>
-<div class="codehilite"><pre><span></span><span class="c1"># Fetch an exact number of random lines (make sure that freq=None)</span>
-<span class="n">df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+  <span class="n">listing_ids</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">css</span><span class="p">(</span><span class="s2">&quot;[listingId]&quot;</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">to_a</span>
+    <span class="o">.</span><span class="n">map</span> <span class="k">do</span> <span class="o">|</span><span class="n">it</span><span class="o">|</span>
+      <span class="n">it</span><span class="o">.</span><span class="n">attributes</span><span class="o">[</span><span class="s2">&quot;listingid&quot;</span><span class="o">].</span><span class="n">to_i64</span>
+    <span class="k">end</span><span class="o">.</span><span class="n">to_s</span>
 
-<span class="c1"># Fetch a percentage of random lines (make sure that n=None)</span>
-<span class="n">df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">freq</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
-</pre></div>
+  <span class="c1"># or, use the shorter-form version (`&amp;`) if there is only one argument passed to the block</span>
+  <span class="n">listing_ids</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">css</span><span class="p">(</span><span class="s2">&quot;[listingId]&quot;</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">to_a</span>
+    <span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="o">&amp;.</span><span class="n">attributes</span><span class="o">[</span><span class="s2">&quot;listingid&quot;</span><span class="o">].</span><span class="n">to_i64</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">to_s</span>
 
-<p>Last but not least, you can try <code>describe</code> and <code>value_counts</code>. <code>describe</code> will return a new data frame consisting of various basic stats for each of the numeric columns in the data frame (count, mean, std, min, max, 25%, 50% 75%):</p>
-<div class="codehilite"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
-
-<span class="c1">#            price  area</span>
-<span class="c1">#   count   150.0   150.000000</span>
-<span class="c1">#   mean    943139.5    100.085800</span>
-<span class="c1">#   std     844677.0    44.566817</span>
-<span class="c1">#   min     62000.0 26.220000</span>
-<span class="c1">#   25%     419875.0    70.740000</span>
-<span class="c1">#   50%     585500.0    93.710000</span>
-<span class="c1">#   75%     1132500.0   126.697500</span>
-<span class="c1">#   max     4500000.0   279.500000</span>
-</pre></div>
-
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <mark><strong>TODO:</strong> Document <code>value_counts</code></mark></li>
-</ul>
-<p><code>value_counts</code> gets applied applied to a discrete series instead, and is a really easy way of checking how many rows there of each value there are in a data frame:</p>
-<div class="codehilite"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;city&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-
-<span class="c1">#   München    96</span>
-<span class="c1">#   Hamburg    24</span>
-<span class="c1">#   Berlin     16</span>
-<span class="c1">#   Bremen     14</span>
-</pre></div>
-
-<h2 id="encode-categorical-data">Encode categorical data</h2>
-<h3 id="simple-encoding">Simple Encoding</h3>
-<p>There are many times, when you would need to turn your series of categorical data (e.g. city names, professions, car models, etc) into numeric representations. The simplest way to do this using Pandas, is to call <code>factorize</code> on the series you want to get encoded.<sup id="fnref:factorize1"><a class="footnote-ref" href="#fn:factorize1">1</a></sup><sup id="fnref:factorize2"><a class="footnote-ref" href="#fn:factorize2">2</a></sup></p>
-<div class="admonition info">
-<p class="admonition-title"><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.factorize.html">factorize</a></p>
-<p>Encode the object as an enumerated type or categorical variable.
-This method is useful for obtaining a numeric representation of an array when all that matters is identifying distinct values. factorize is available as both a top-level function pandas.factorize(), and as a method </p>
-</div>
-<div class="codehilite"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;c_code&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">factorize</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-
-<span class="c1">#    city      c_code</span>
-<span class="c1">#  München  0</span>
-<span class="c1">#  Bremen   1</span>
-<span class="c1">#  Berlin   2</span>
-<span class="c1">#  Hamburg  3</span>
+  <span class="nb">p</span> <span class="n">listing_ids</span>
+<span class="k">end</span>
 </pre></div>
 
 <div class="footnote">
 <hr />
 <ol>
-<li id="fn:factorize1">
-<p><a href="https://stackoverflow.com/a/51311996/1107412">Pandas: convert categories to numbers | Stackoverflow</a>&#160;<a class="footnote-backref" href="#fnref:factorize1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<li id="fn:myhtml">
+<p><a href="https://github.com/kostya/myhtml">myhtml - Fast HTML5 Parser, Css selectors | GtiHub</a>&#160;<a class="footnote-backref" href="#fnref:myhtml" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
-<li id="fn:factorize2">
-<p><a href="http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.factorize.html">factorize | Pandas Docs</a>&#160;<a class="footnote-backref" href="#fnref:factorize2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<li id="fn:http_client">
+<p><a href="https://crystal-lang.org/api/0.24.2/HTTP/Client.html">class HTTP::Client | Crystal API Reference</a>&#160;<a class="footnote-backref" href="#fnref:http_client" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:blocks">
+<p><a href="https://crystal-lang.org/reference/syntax_and_semantics/blocks_and_procs.html">Blocks and Procs | Crystal Docs</a>&#160;<a class="footnote-backref" href="#fnref:blocks" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -1452,7 +1258,7 @@ This method is useful for obtaining a numeric representation of an array when al
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../numpy/" title="NumPy" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../../.." title="Welcome to DevNotes" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1461,19 +1267,19 @@ This method is useful for obtaining a numeric representation of an array when al
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                NumPy
+                Welcome to DevNotes
               </span>
             </div>
           </a>
         
         
-          <a href="../../../../devops/jenkins/" title="Jenkins" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../../Go/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Jenkins
+                Introduction
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
