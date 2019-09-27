@@ -1,3 +1,5 @@
+!!! info "Language: Crystal"
+
 The goal of this sample is to demonstrate fetching HTML data from a page (en eBay search listing), parsing the HTML content using a 3rd party library[^myhtml], and looking for a specific attribute within the content (`listingId`). The elements that have it contain IDs to the products that apear on the given listing page. We would finally map those out, and turn the resulting array into a set (`to_s`) in order to remove duplicates.
 
 ```crystal
